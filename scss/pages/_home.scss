@@ -1,0 +1,18 @@
+#main-doc {
+  grid-column: 5/ -1;
+  padding: 3rem;
+  overflow-y: auto;
+  @include respond(phone) {
+    grid-column: 1/-1;
+  }
+}
+#navbar {
+  grid-column: 1 / 5;
+  grid-row: 1/-1;
+  padding: 3rem 0;
+  text-align: center;
+  border-right: 0.3rem solid $color-grey-dark;
+  @include respond(phone) {
+    display: none;
+  }
+}

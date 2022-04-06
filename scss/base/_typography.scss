@@ -1,0 +1,59 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $color-grey-dark;
+}
+//300 400 500 700 900
+//"Cutive Mono"
+header {
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+.type-1 {
+  margin-left: 5rem;
+  margin-top: 5rem;
+  li {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+.type-anchor {
+  list-style: none;
+  a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    color: $color-grey-dark;
+  }
+  li {
+    padding: 1.2rem 1rem 1.2rem 3rem;
+    border-top: 1px solid $color-grey-dark;
+  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+
+  justify-items: center;
+  margin-top: 3rem;
+}
+code {
+  display: block;
+  font-size: 1.5rem;
+  color: $color-grey-medium;
+  text-align: left;
+  white-space: pre-line;
+  font-weight: 300;
+  word-wrap: normal;
+  word-break: normal;
+  line-height: 2;
+  padding: 3rem;
+  margin: 2rem 0;
+  background-color: $color-white-lavender-3;
+  border-radius: 5px;
+}

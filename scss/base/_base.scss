@@ -1,0 +1,43 @@
+/*********************************************
+**********************************************
+GENERAL CSS, UNIVERSAL AND COMMON CSS 
+*********************************************
+**********************************************/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem==9px
+  }
+  @include respond(tab-port) {
+    font-size: 50%; //1rem=8px
+  }
+  @include respond(phone) {
+    font-size: 30%; //1rem
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem==12px
+  }
+}
+body {
+  box-sizing: border-box;
+  // padding: 3rem;
+  background-color: $color-white-honeydew-1;
+  /* IMPORTANT A PADDING AROUND THE WHOLE BODY , ITS NOT A INHEIRT PROPERTY */
+}
+
+::selection {
+  background-color: $color-grey-dark;
+  color: $color-white-lavender-3;
+}
